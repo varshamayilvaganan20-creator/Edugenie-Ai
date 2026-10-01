@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        EduGenie - AI Learning Assistant
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', path='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+
+        <header class="hero">
+
+            <div class="logo-icon">
+                🎓
+            </div>
+
+            <div class="badge">
+                AI LEARNING ASSISTANT
+            </div>
+
+            <h1>
+                EduGenie
+            </h1>
+
+            <p>
+                Your intelligent AI-powered
+                learning companion.
+            </p>
+
+            <p class="subtitle">
+                Ask questions, understand concepts,
+                create quizzes, summarize content,
+                and build personalized learning paths.
+            </p>
+
+        </header>
+
+
+        <!-- MAIN CARD -->
+
+        <section class="main-card">
+
+            <div class="form-group">
+
+                <label for="task">
+
+                    Choose what you want to do
+
+                </label>
+
+                <select id="task">
+
+                    <option value="qa">
+                        💬 Ask a Question
+                    </option>
+
+                    <option value="explain">
+                        💡 Explain a Topic
+                    </option>
+
+                    <option value="quiz">
+                        📝 Generate Quiz
+                    </option>
+
+                    <option value="summarize">
+                        📄 Summarize Text
+                    </option>
+
+                    <option value="learn">
+                        🚀 Learning Path
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="inputText">
+
+                    Enter your question,
+                    topic, or content
+
+                </label>
+
+                <textarea
+                    id="inputText"
+                    rows="10"
+                    placeholder="Example: Explain Artificial Intelligence in simple words..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="button-container">
+
+                <button
+                    id="submitBtn"
+                    class="primary-btn"
+                >
+
+                    ✨ Generate
+
+                </button>
+
+
+                <button
+                    id="clearBtn"
+                    class="secondary-btn"
+                >
+
+                    Clear
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATUS -->
+
+        <div
+            id="status"
+            class="status hidden"
+        >
+        </div>
+
+
+        <!-- RESULT -->
+
+        <section
+            id="result"
+            class="result-card hidden"
+        >
+        </section>
+
+
+        <!-- FEATURES -->
+
+        <section class="features">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    💬
+                </div>
+
+                <h3>
+                    Smart Q&A
+                </h3>
+
+                <p>
+                    Ask academic questions and
+                    receive clear answers.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    💡
+                </div>
+
+                <h3>
+                    Easy Explanations
+                </h3>
+
+                <p>
+                    Understand difficult concepts
+                    using simple explanations.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    📝
+                </div>
+
+                <h3>
+                    AI Quizzes
+                </h3>
+
+                <p>
+                    Generate multiple-choice
+                    questions for practice.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🚀
+                </div>
+
+                <h3>
+                    Learning Paths
+                </h3>
+
+                <p>
+                    Get structured beginner-to-
+                    advanced learning plans.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                EduGenie © 2026
+            </p>
+
+            <p>
+                Powered by FastAPI + Google Gemini
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script
+        src="{{ url_for('static', path='app.js') }}"
+    ></script>
+
+</body>
+
+</html>

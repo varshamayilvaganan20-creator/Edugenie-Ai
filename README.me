@@ -1,0 +1,66 @@
+# EduGenie
+
+Google Gemini Powered Learning Assistant.
+
+EduGenie is an AI-powered educational assistant built with:
+
+- Python
+- FastAPI
+- Google Gemini
+- HTML
+- CSS
+- JavaScript
+- Jinja2
+- Pydantic
+
+## Features
+
+1. Question & Answer
+2. Topic Explanation
+3. Quiz Generation
+4. Text Summarization
+5. Personalized Learning Path
+
+---
+
+# Project Structure
+
+```text
+EduGenie/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config.py
+│   │
+│   ├── schemas/
+│   │   ├── __init__.py
+│   │   └── models.py
+│   │
+│   └── services/
+│       ├── __init__.py
+│       ├── gemini_service.py
+│       ├── qna.py
+│       ├── explanation_module.py
+│       ├── quiz_module.py
+│       ├── summary_module.py
+│       └── learning_path.py
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── style.css
+│   └── app.js
+│
+├── tests/
+│   └── test_api.py
+│
+├── .env
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── requirements-local.txt
+├── Dockerfile
+├── docker-compose.yml
+└── README.md
